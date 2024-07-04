@@ -101,10 +101,14 @@ A execução da aplicação pode ser feita de duas maneiras: informando um arqui
 Acesso o diretório `./src` e execute o comando:
 
 ```sh
-python APKAnalyzer.py ./para-processar # para processar todos os arquivos no diretório ./para-processar
-
-python APKAnalyzer.py ./para-processar/6BE157CDE54CBD4B7D4866312AF8C0E099CE83AD9F449FF3539CF6FCA40BB82D.apk # para processar apenas o arquivo 6BE157CDE54CBD4B7D4866312AF8C0E099CE83AD9F449FF3539CF6FCA40BB82D.apk
+# para processar apenas o arquivo 6BE157CDE54CBD4B7D4866312AF8C0E099CE83AD9F449FF3539CF6FCA40BB82D.apk
+python APKAnalyzer.py ./para-processar/6BE157CDE54CBD4B7D4866312AF8C0E099CE83AD9F449FF3539CF6FCA40BB82D.apk 
 ```
+```sh
+# para processar todos os arquivos no diretório ./para-processar
+python APKAnalyzer.py ./para-processar 
+```
+
 
 Na primeira execução da ferramenta, as dependências serão verificadas. Caso ocorra um erro, a ferramenta será abortada. Para corrigir as dependências veja os  [requisitos](#requisitos).
 
